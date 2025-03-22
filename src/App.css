@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg, #74b9ff, #a29bfe, #fd79a8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc{
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #a29bfe, #74b9ff);
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.2), -10px -10px 30px rgba(255,255,255,0.3);
+}
+
+#input{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  height: 80px;
+  border: none;
+  background: #ecf0f1;
+  text-align: right;
+  color: #2d3436;
+  font-size: 2rem;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.1), inset -5px -5px 15px rgba(255,255,255,0.7);
+}
+
+button{
+  border: none;
+  color: #2d3436;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #f5f6fa, #dcdde1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1), -5px -5px 15px rgba(255,255,255,0.7);
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+
+button:active{
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 10px rgba(255,255,255,0.7);
+}
+
+button.operator{
+  background: linear-gradient(145deg, #ffaf40, #ff7f50);
+  color: #fff;
+}
+
+button.equals{
+  background: linear-gradient(145deg, #00b894, #00cec9);
+}
+
+button.clear{
+  background: linear-gradient(145deg, #d63031, #e74c3c);
+}
+
+button:hover{
+  transform: scale(1.05);
+}
